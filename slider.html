@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang=ru >
+<head>
+	<title>Слайдер простой</title>
+	<link rel=stylesheet href=slider.css >
+	<meta charset=utf-8>
+	<style media="screen">
+
+	#slider{
+		display:flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		overflow-x: scroll;
+		flex-direction: row;
+		margin-top:700px;
+		width:100%;
+	}
+	#slider img{
+		width:150px;
+		height:70px;
+	}
+
+		#slider input[type=radio]:checked + label img{
+			width:100%;
+			max-width: 900px;
+			height:500px;
+			background: green;
+			transform:
+	    	rotateZ(-10deg)
+	    	rotateX(10deg);
+				position:fixed;
+				top:70px;
+				left:100px;
+				display:flex;
+				justify-content: center;
+				align-items: baseline;
+		}
+		/* #slider input[type=radio]:checked + label>img {
+
+} */
+/* #slider > fieldset > label > img */
+	</style>
+</head>
+<body>
+	<div id=slider>
+		<fieldset>
+			<input type=radio name=slider >
+			<label for="slider">
+				<img src="pic/1.jpg">
+			</label>
+		</fieldset>
+		<fieldset>
+			<input type='radio' name=slider checked>
+			<label for="slider">
+				<img src="pic/2.jpg">
+			</label>
+		</fieldset>
+		<fieldset>
+			<input type=radio name=slider >
+			<label for="slider">
+				<img src="pic/3.jpg">
+			</label>
+		</fieldset>
+		<fieldset>
+			<input type=radio name=slider >
+			<label for="slider">
+				<img src="pic/4.jpg">
+			</label>
+		</fieldset>
+		<fieldset>
+			<input type=radio name=slider >
+			<label for="slider">
+				<img src="pic/5.jpg">
+			</label>
+		</fieldset>
+		<fieldset>
+			<input type=radio name=slider >
+			<label for="slider">
+				<img src="pic/6.jpg">
+			</label>
+		</fieldset>
+		<fieldset>
+			<input type=radio name=slider >
+			<label for="slider">
+				<img src="pic/7.jpg">
+			</label>
+		</fieldset>
+		<fieldset>
+			<input type=radio name=slider >
+			<label for="slider">
+				<img src="pic/8.jpg">
+			</label>
+		</fieldset>
+		<fieldset>
+			<input type=radio name=slider >
+			<label for="slider">
+				<img src="pic/9.jpg">
+			</label>
+		</fieldset>
+	</div>
+</body>
+<!-- Скрипт может работать и без JS -->
+<!-- <script type="text/javascript">
+	document.querySelector('input[type=radio]').checked='true';
+</script> -->
+</html>
